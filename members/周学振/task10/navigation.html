@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            font:14px/1.5 "Microsoft YaHei","微软雅黑",sans-serif;
+            color: #656565;
+        }
+        #header{
+
+            width:auto;
+            height: 50px;
+            background: black;
+        }
+        .head_wrapper{
+            width:900px;
+            height:40px;
+            margin:0 auto;
+        }
+        .logo img{
+            height: 40px;
+            float:left;
+        }
+        .nav li{
+            display: inline-block;
+            color:white;
+            float: left;
+            margin-left:10px;
+        }
+        .nav li:hover{
+            background: #ffffff;
+        }
+        .nav li:hover a{
+            color:black;
+        }
+
+        .nav{
+            float: right;
+            display: block;
+        }
+        .nav a{
+            display: block;
+            font-size:16px;
+            height:50px;
+            line-height:50px;
+            padding:0 10px;
+            color: #fff;
+        }
+        #contenter{
+            margin-top:10px;
+        }
+        .content_wrapper{
+            margin:0 auto;
+            width:900px;
+        }
+        #contenter .aside{
+            float: left;
+            width:200px;
+            height:500px;
+            background: #eee;
+        }
+        #contenter .main{
+            margin-left:210px;
+            padding:20px 10px;
+            background: #eeeeee;
+        }
+        .main h1{
+            margin:20px 0;
+        }
+        #footer{
+            height: 50px;
+            width:auto;
+            background: black;
+        }
+        .clearfix:after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .foot_wrapper{
+            width:900px;
+            margin:0 auto;
+        }
+        .foot_wrapper ul{
+            float: left;
+        }
+        .foot_wrapper ul>li{
+            display: inline-block;
+            font: 20px/1.5 "Microsoft YaHei","微软雅黑",sans-serif;
+            cursor: pointer;
+            color: white;
+            margin-left: 20px;
+            line-height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="head_wrapper">
+            <a href="http://www.jirengu.com" class="logo">
+                <img src="http://cdn.jirengu.com/public/logo-tiny.png">
+            </a>
+            <ul class="nav">
+                <li><a href="">技能</a></li>
+                <li><a href="">作品</a></li>
+                <li><a href="">经历</a></li>
+                <li><a href="">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contenter" class="clearfix">
+        <div class="content_wrapper">
+            <div class="aside"></div>
+            <div class="main">
+                <h1>我的作品</h1>
+                <p>This is a line</p>
+                <p>And this is another</p>
+                <p>Have a nice day!</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class=" clearfix">
+        <div class="foot_wrapper">
+            <ul>
+                <li>饥人谷</li>
+                <li>JSCODE</li>
+                <li>JSBIN</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
